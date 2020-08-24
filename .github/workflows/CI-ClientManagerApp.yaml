@@ -1,4 +1,4 @@
-name: ClientManagerApp Android Release
+name: ClientManagerApp Release
 
 on:
   push:
