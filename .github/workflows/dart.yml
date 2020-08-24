@@ -8,7 +8,7 @@ on:
 jobs:
   version:
     name: Create version number
-    runs-on: ubuntu-latest
+    runs-on: windows-latest
     steps:
     - uses: actions/checkout@v1
     - name: Fetch all history for all tags and branches
@@ -27,11 +27,6 @@ jobs:
     - uses: subosito/flutter-action@v1
       with:
         flutter-version: '1.20.0'
-    - run: flutter channel stable
-    - run: flutter upgrade --force
-    - run: flutter pub cache repair
-    - run: flutter clean
-    - run: flutter pub get
   #- run: flutter test
     
     - run: flutter build apk
