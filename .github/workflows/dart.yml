@@ -31,7 +31,7 @@ jobs:
     - run: flutter pub get
   #- run: flutter test
     - run: ls -A
-    - run: flutter build apk --stacktrace
+    - run: flutter build apk
     - run : flutter doctor -v
   # - run: flutter build appbundle
 # Upload generated apk to the artifacts.
